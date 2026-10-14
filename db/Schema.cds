@@ -5,6 +5,8 @@ type NewInfo {
     PhoneNumber : Integer;
 }
 
+
+
 aspect Area {
     Street  : String;
     Pincode : Integer;
