@@ -2,10 +2,9 @@ namespace sap.cap.NEWPRODUCTSHOP;
 
 type NewInfo {
     country     : String;
+    
     PhoneNumber : Integer; 
 }
-
-
 
 aspect Area {
     Street  : String;
