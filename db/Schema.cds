@@ -2,7 +2,7 @@ namespace sap.cap.NEWPRODUCTSHOP;
 
 type NewInfo {
     country     : String;
-    PhoneNumber : Integer;
+    PhoneNumber : Integer; 
 }
 
 
