@@ -1,1 +1,10 @@
-Get http://localhost:4004/odata/v4/newproductshop/NewproductShop
+
+# Get http://localhost:4004/odata/v4/newproductshop/NewproductShop?$expand=newproductShopDetailGet http://localhost:4004/odata/v4/newproductshop/myfunction(name='senthil')
+
+POST http://localhost:4004/odata/v4/newproductshop/myaction
+Content-Type: application/json
+
+{
+    "name": "senthil"
+}
+

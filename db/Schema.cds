@@ -1,28 +1,31 @@
 namespace sap.cap.NEWPRODUCTSHOP;
 
-type NewInfo {
-    country     : String;
-    
-    PhoneNumber : Integer; 
+using
+{
+    cuid
 }
+from '@sap/cds/common';
 
-aspect Area {
-    Street  : String;
+aspect Area
+{
+    Street : String;
     Pincode : Integer;
 }
 
-entity NewproductShop : Area {
-    key ID       : Integer;
-        Name     : String;
-        Address  : String;
-        Category : Integer;
-        Quality  : Decimal(9, 4);
-        info     : NewInfo;
+entity NewproductShop : cuid, Area
+{
+    Name : String;
+    Address : String;
+    Category : Integer;
+    Quality : Decimal(9,4);    
+    newproductShopDetail : Association to one NewproductShopDetails;
 }
 
-entity NewproductShopDetails {
-    key ID    : Integer;
-        Order : String(100);
-        Item  : String(100);
-        Price : Decimal(9, 0);
+entity NewproductShopDetails
+{
+    key ID : Integer;
+    Order : String(100);
+    Item : String(100);
+    Price : Decimal(9,0);
+    newproductShops : Association to many NewproductShop on newproductShops.newproductShopDetail = $self;
 }

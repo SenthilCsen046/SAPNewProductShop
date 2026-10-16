@@ -1,4 +1,4 @@
-ID,Name,Address,Category,Quality,info_country,info_PhoneNumber,Street,Pincode
-1,Senthil,Chennai,1,100,India,9489811673,5/182 kappalvadi,635104
-2,Kumar,Doha,2,200,Australia,9442946653,street no 725,123456
-3,Chennaiyan,Kappalvadi,3,300,Tamil Nadu,9363570020,Stree no 7042,789456
+ID,Name,Address,Category,Quality,Street,Pincode,newproductShopDetail_ID
+1,Senthil,India,10,100,5/182 Kappalvadi,635104,1
+2,kumar,Australia,20,200,5/182 krishnagiri,6351942,2
+3,Kannan,Thiruvanmaiur,30,300,5/182 chennai,600028,3
