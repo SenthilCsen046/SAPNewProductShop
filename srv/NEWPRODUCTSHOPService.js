@@ -4,6 +4,8 @@ module.exports = cds.service.impl(async function (srv) {
 
     // srv.on('READ','NewproductShop', async (req) => {
     //    console.log("this is on handler.")
+
+    
     // })
     srv.before('READ','NewproductShop', async (req) => {
         console.log("this is on Before handler.")
